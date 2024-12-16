@@ -1,0 +1,64 @@
+{
+  "RuntimeVersion": "10.12.10.51938",
+  "ProjectID": "a1215cd6-7257-49c4-99f8-cf3f981de1ea",
+  "ProjectName": "Service Request Management",
+  "ModelVersion": "unversioned",
+  "Description": "",
+  "AdminUser": "MxAdmin",
+  "AdminRole": "8dd52bfa-6d7e-453b-b506-303c0a3d9567",
+  "JavaVersion": 21,
+  "Roles": {
+    "8dd52bfa-6d7e-453b-b506-303c0a3d9567": {
+      "Name": "Administrator",
+      "ManageableRoles": [
+        "8dd52bfa-6d7e-453b-b506-303c0a3d9567",
+        "53f5d6fa-6da9-4a71-b011-454ec052cce8",
+        "94b4029a-4a44-473c-ba02-eac9df59a9c7",
+        "af889537-ec68-4674-b4e5-ac78456343f7",
+        "4e729682-b1a4-41b6-99ab-155369573c47"
+      ]
+    },
+    "53f5d6fa-6da9-4a71-b011-454ec052cce8": {
+      "Name": "Customer",
+      "ManageableRoles": [
+        "53f5d6fa-6da9-4a71-b011-454ec052cce8"
+      ]
+    },
+    "94b4029a-4a44-473c-ba02-eac9df59a9c7": {
+      "Name": "Centralplanning"
+    },
+    "af889537-ec68-4674-b4e5-ac78456343f7": {
+      "Name": "Technician"
+    },
+    "4e729682-b1a4-41b6-99ab-155369573c47": {
+      "Name": "Anonymous"
+    }
+  },
+  "Constants": [],
+  "ScheduledEvents": [],
+  "Languages": [
+    "en_US"
+  ],
+  "Configuration": {
+    "SourceDatabaseType": "HSQLDB",
+    "SourceDatabaseName": "default",
+    "SourceBuiltInDatabasePath": "model/sampledata/data/database"
+  },
+  "RequestHandlers": [
+    {
+      "Name": "/api/",
+      "DefaultEnabled": true,
+      "MatchExactly": false
+    },
+    {
+      "Name": "/link/",
+      "DefaultEnabled": true,
+      "MatchExactly": false
+    },
+    {
+      "Name": "/p/",
+      "DefaultEnabled": false,
+      "MatchExactly": false
+    }
+  ]
+}
